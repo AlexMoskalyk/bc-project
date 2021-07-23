@@ -13,7 +13,7 @@
 }
 
 .footer-text-wrapper {
-  text-align-last: left;
+  text-align: left;
 }
 
 .footer-text {
@@ -46,8 +46,8 @@
 .footer-social-item {
   width: 34px;
   height: 34px;
-  display: flex;
-  justify-content: center;
+  //   display: flex;
+  //   justify-content: center;
 
   &:not(:last-child) {
     margin-right: 25px;
