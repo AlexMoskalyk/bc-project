@@ -60,6 +60,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-accent-color;
+  }
 }
 
 .footer-social-icon {
