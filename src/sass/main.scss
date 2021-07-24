@@ -3,10 +3,13 @@
  * Все паршалы подключаются сюда.
  */
 @import './utils/vars';
+@import './utils/visually-hidden';
 @import './base/common';
 @import './base/reset';
 
+@import './components/container';
 @import './components/menu';
+@import './components/button';
 
 @import './layouts/header-hero';
 @import './layouts/products';
