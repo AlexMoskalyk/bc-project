@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  border-radius: 22px;
+  padding: 10px 32px;
+  border: none;
+
+  color: $primary-accent-color;
+  background-color: $primary-bg-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $hover-color;
+}
+
+.button-inverse {
+  display: block;
+  border-radius: 22px;
+  padding: 10px 32px;
+  border: none;
+
+  color: $secondary-text-color;
+  background-color: $primary-accent-color;
+}
+
+.button-inverse:hover,
+.button-inverse:focus {
+  background-color: $inverse-hover-color;
+}
