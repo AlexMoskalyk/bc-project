@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  background-color: #ffffff;
+  color: #907e82;
+  font-family: DM Sans, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.button {
+  display: block;
+  border-radius: 22px;
+  padding: 10px 32px;
+  border: none;
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ecebeb;
+}
+
+.button-inverse {
+  display: block;
+  border-radius: 22px;
+  padding: 10px 32px;
+  border: none;
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.button-inverse:hover,
+.button-inverse:focus {
+  background-color: #d41342;
+}/*# sourceMappingURL=main.css.map */
