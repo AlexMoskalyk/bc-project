@@ -176,7 +176,7 @@
     }
 }
 
-.prod-item-link {
+.prod-item-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,6 +186,7 @@
     width: 40px;
     height: 40px;
 
+    border: none;
     border-radius: 50px;
     background-color: $primary-bg-color;
 
@@ -202,7 +203,7 @@
     }
 }
 
-.prod-item-link-icon {
+.prod-item-btn-icon {
     fill: $primary-accent-color;
     cursor: pointer;
 }
