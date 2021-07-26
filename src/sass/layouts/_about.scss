@@ -1,13 +1,19 @@
 .about {
   padding-top: 125px;
   background-color: $secondary-bg-color;
+  background-image: url(../images/about/cowbg-mob-x1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   @media screen and (min-width: 768px) {
     padding-top: 130px;
+    background-image: unset;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
+    background-image: url(../images/about/cowbg-desk-x1.png);
   }
 
   &-label {
@@ -116,9 +122,24 @@
     }
   }
 
+  &-btn {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 37px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
+
   &-btn-logo {
-    width: 4.5px;
-    height: 8px;
+    width: 10px;
+    height: 15px;
     fill: $primary-accent-color;
+    margin-left: 14px;
   }
 }
