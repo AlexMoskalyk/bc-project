@@ -148,6 +148,22 @@
     }
 }
 
+.prod-name::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 230px;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 6px;
+    
+    background-image: url(../images/products/dots.png);
+    
+    @media screen and (min-width: 1280px) {
+        top: 240px;
+    }
+}
+
 .prod-item-descr {
     margin-left: 40px;
     margin-right: 40px;
