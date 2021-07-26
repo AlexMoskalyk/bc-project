@@ -1,0 +1,139 @@
+.advantages {
+  padding-top: 129px;
+  padding-bottom: 97px;
+  background-color: $secondary-bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 152px;
+    padding-bottom: 140px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 105px;
+    padding-bottom: 139px;
+  }
+
+  &-list {
+    // margin-bottom: 97px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: -60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      margin-left: -30px;
+    }
+  }
+
+  &-list-item {
+    &:not(:last-child) {
+      margin-bottom: 104px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 180px) / 3);
+      margin-left: 60px;
+      &:not(:last-child) {
+        margin-bottom: unset;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc((100% - 90px) / 3);
+      margin-left: 30px;
+    }
+  }
+
+  &-text-item {
+    position: relative;
+  }
+  &-text-item.logo-one::before {
+    content: '';
+    background-image: url(../images/about/icon1-x1.png);
+    width: 33px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -66px;
+
+    @media screen and (min-width: 768px) {
+      top: -86px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -90px;
+    }
+  }
+
+  &-text-item.logo-two::before {
+    content: '';
+    background-image: url(../images/about/icon2-x1.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -66px;
+
+    @media screen and (min-width: 768px) {
+      top: -86px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -90px;
+    }
+  }
+
+  &-text-item.logo-three::before {
+    content: '';
+    background-image: url(../images/about/icon3-x1.png);
+    width: 44px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -66px;
+
+    @media screen and (min-width: 768px) {
+      top: -86px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -90px;
+    }
+  }
+
+  &-item-title {
+    font-family: Titan One;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    color: $primary-accent-color;
+    padding-bottom: 11px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 13px;
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 15px;
+      font-size: 58px;
+    }
+  }
+
+  &-item-text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: $special-text-color;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }
+}
