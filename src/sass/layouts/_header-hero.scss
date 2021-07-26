@@ -1,3 +1,40 @@
+.header {
+  & > .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto;
+    margin-top: 6px;
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      margin-top: 37px;
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1280px;
+      padding-top: 37px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  width: 100%;
+  // padding-top: 6px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  position: absolute;
+
+  &-button {
+    cursor: pointer;
+  }
+  &-buttons {
+    display: flex;
+  }
+}
 .header-logo {
   max-width: 200px;
   max-height: 50px;
@@ -35,43 +72,6 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 75px;
-  }
-}
-.header {
-  & > .container {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin: 0 auto;
-    margin-top: 6px;
-    max-width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      margin-top: 37px;
-      padding-left: 34px;
-      padding-right: 34px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 1280px;
-      padding-top: 37px;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-  }
-  width: 100%;
-  // padding-top: 6px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-  position: absolute;
-
-  &-button {
-    cursor: pointer;
-  }
-  &-buttons {
-    display: flex;
   }
 }
 
@@ -121,21 +121,8 @@
   // padding-top: 137px;
   // padding-bottom: 80px;
   background-color: $hero-bg-color;
-  background-image: url(../images/header-hero/hero-mob-x1-min.png);
-  background-repeat: no-repeat;
+
   // background-size: 171px;
-  background-position-x: 80%;
-  background-position-y: 100%;
-  @media screen and (min-width: 768px) {
-    background: url(../images/header-hero/hero-tab-x1-min.png) 60% 100% no-repeat,
-      url(../images/header-hero/girl-tab-x1-min.png) 95% 100% no-repeat;
-    background-color: $hero-bg-color;
-  }
-  @media screen and (min-width: 1200px) {
-    background: url(../images/header-hero/hero-desk-x1-min.png) 60% 100% no-repeat,
-      url(../images/header-hero/girl-desk-x1-min.png) 95% 100% no-repeat;
-    background-color: $hero-bg-color;
-  }
 
   & > .container {
     max-width: 480px;
@@ -146,6 +133,21 @@
     padding-bottom: 160px;
     display: flex;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 100%;
+    @media screen and (min-width: 768px) {
+      background: url(../images/header-hero/hero-tab-x1-min.png) 60% 100% no-repeat,
+        url(../images/header-hero/girl-tab-x1-min.png) 95% 100% no-repeat;
+      background-color: $hero-bg-color;
+    }
+    @media screen and (min-width: 1200px) {
+      background: url(../images/header-hero/hero-desk-x1-min.png) 60% 100% no-repeat,
+        url(../images/header-hero/girl-desk-x1-min.png) 95% 100% no-repeat;
+      background-color: $hero-bg-color;
+    }
+
+    background-image: url(../images/header-hero/hero-mob-x1-min.png);
     @media screen and (min-width: 768px) {
       max-width: 768px;
       flex-wrap: wrap;
