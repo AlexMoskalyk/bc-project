@@ -3,6 +3,15 @@ body {
   color: $primary-text-color;
   font-family: DM Sans, sans-serif;
   letter-spacing: 0.04em;
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .section-title {
@@ -14,22 +23,28 @@ body {
   color: $primary-accent-color;
   @media screen and (min-width: 768px) {
     font-size: 48px;
+    line-height: 1.15;
   }
   @media screen and (min-width: 1280px) {
     font-size: 58px;
+    line-height: 1.15;
   }
 }
 
-.section-item-title {
-  font-family: Titan One;
-  font-size: 36px;
-  line-height: 1.14;
+.section-label {
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.04em;
-  color: $primary-accent-color;
+  text-transform: uppercase;
+  color: $secondary-accent-color;
+
   @media screen and (min-width: 768px) {
-    font-size: 48px;
+    font-size: 26px;
+    line-height: 1.15;
   }
   @media screen and (min-width: 1280px) {
-    font-size: 58px;
+    font-size: 30px;
+    line-height: 1.13;
   }
 }
