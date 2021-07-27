@@ -30,7 +30,7 @@
 
                 <p class="about-text-bot">Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <button type="button" class="about-btn button">Read more
+                <button type="button" class="about-btn button about-modal-open">Read more
                     <svg class="about-btn-logo">
                         <use href="./images/sprite-ice.svg#Vector-1"></use>
                     </svg>
@@ -40,19 +40,21 @@
 
         </div>
     </div>
+    <div class="about-modal is-hidden">
+        <div class="about-modal-window">
+            <button class="close-button about-close-btn about-modal-close">
+                <svg class="close-button-icon">
+                    <use href="./images/sprite-ice.svg#close"></use>
+                </svg>
+            </button>
+            <p class="about-modal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius praesentium
+                voluptatem ut perspiciatis repudiandae consequuntur expedita modi facere vel iste, possimus facilis
+                eaque
+                assumenda cupiditate nulla ad fuga voluptas accusamus numquam tempora.
+            </p>
+        </div>
+    </div>
 </section>
 
-<div class="backdrop visually-hidden about-modal">
-    <div class="about-modal-window">
-        <button class="close-button about-close-btn">
-            <svg class="close-button-icon">
-                <use href="./images/sprite-ice.svg#close"></use>
-            </svg>
-        </button>
-        <p class="about-modal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius praesentium
-            voluptatem ut perspiciatis repudiandae consequuntur expedita modi facere vel iste, possimus facilis eaque
-            assumenda cupiditate nulla ad fuga voluptas accusamus numquam tempora.
-        </p>
-    </div>
-</div>
+
 <!-- about end -->

@@ -73,7 +73,6 @@
     }
   }
   &-pic-block {
-    position: relative;
     @media screen and (min-width: 480px) {
       min-width: 280px;
     }
@@ -89,6 +88,7 @@
     }
   }
   &-item {
+    position: relative;
     margin-right: 35px;
     margin-left: 35px;
     @media screen and (min-width: 480px) {
@@ -180,67 +180,40 @@
     margin-left: 14px;
   }
 }
-.close-button {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 23px;
-  right: 28px;
-  border: none;
-  background: none;
 
-  &-icon {
-    fill: $secondary-text-color;
-    margin: auto auto;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    display: block;
-  }
+.about-modal {
+  // transform: translate(-50%, -50%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
 }
-
-.close-button-icon:hover {
-  opacity: 1;
-}
-.close-button-icon:before,
-.close-button-icon:after {
-  content: ' ';
-  position: absolute;
-  left: 6px;
-  height: 100%;
-  width: 2px;
-  background-color: $secondary-text-color;
-}
-.close-button-icon:before {
-  transform: rotate(45deg);
-}
-.close-button-icon:after {
-  transform: rotate(-45deg);
+.about-modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: none;
 }
 
 .about-modal-window {
-  width: 300px;
-  height: 600px;
-  background-color: #ffffff;
+  width: 470px;
+  height: 500px;
+  background-color: $secondary-accent-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 53%;
+  top: 35%;
   padding: 25px;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-
-  // @media screen and (min-width: 480px) {
-  //   width: 450px;
-  //   height: 609px;
-  //   padding: 40px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 528px;
-  //   height: 581px;
-  // }
+  // transform: translate(-50%, -50%);
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-duration: 5000ms;
 }
+
+// @media screen and (min-width: 480px) {
+//   width: 450px;
+//   height: 609px;
+//   padding: 40px;
+// }
+// @media screen and (min-width: 1200px) {
+//   width: 528px;
+//   height: 581px;
+// }
