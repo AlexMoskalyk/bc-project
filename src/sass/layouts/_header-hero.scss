@@ -8,7 +8,7 @@
     @media screen and (min-width: 768px) {
       margin-top: 37px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       max-width: 1280px;
     }
   }
@@ -38,7 +38,7 @@
     margin-left: 30px;
     color: $secondary-text-color;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     align-items: center;
   }
@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 25px;
   }
 }
@@ -102,7 +102,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
   & span {
@@ -155,7 +155,7 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       width: 138px;
       height: 40px;
@@ -175,7 +175,7 @@
     border-radius: 20px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       width: 138px;
       height: 40px;
@@ -202,7 +202,7 @@
 
       margin: 0 auto;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       max-width: 1280px;
       margin: 0 auto;
     }
@@ -218,7 +218,7 @@
     @media screen and (min-width: 768px) {
       display: block;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-top: 20px;
     }
     &-icon {
@@ -233,7 +233,7 @@
       margin-left: 139px;
       margin-bottom: 34px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-left: 210px;
       margin-bottom: 56px;
     }
@@ -253,7 +253,7 @@
     @media screen and (min-width: 768px) {
       font-size: 22px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 38px;
     }
     & > span {
@@ -264,7 +264,7 @@
       @media screen and (min-width: 768px) {
         font-size: 34px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         font-size: 58px;
         margin-top: 15px;
       }
@@ -277,7 +277,7 @@
         margin-top: 102px;
         margin-bottom: 60px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         margin-top: 171px;
         margin-bottom: 112px;
       }
@@ -293,7 +293,7 @@
     @media screen and (min-width: 768px) {
       display: block;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       width: 200px;
     }
@@ -314,7 +314,7 @@
         margin-top: 13px;
       }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       margin-top: 156px;
       margin-right: 77px;
@@ -332,7 +332,7 @@
     text-transform: uppercase;
     color: $primary-accent-color;
     display: block;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 44px;
     }
   }
@@ -348,7 +348,7 @@
   top: -8%;
   right: -20%;
   z-index: -1;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 30px;
     width: 30px;
     top: -15%;
@@ -367,7 +367,7 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: block;
   }
 }
@@ -382,7 +382,7 @@
   @media screen and (min-width: 768px) {
     left: 50%;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     left: 46%;
   }
   &::before {
@@ -402,7 +402,7 @@
       bottom: 15%;
       right: -80%;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 538px;
       height: 538px;
       bottom: 13%;
@@ -418,7 +418,7 @@
     right: 0;
     bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: block;
     right: 5%;
     bottom: 0;
