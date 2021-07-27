@@ -62,10 +62,10 @@
   color: $secondary-text-color;
   background-color: $primary-accent-color;
 }
-.button-inverse:hover,
-:focus {
-  background-color: $inverse-hover-color;
-}
+// .button-inverse:hover,
+// :focus {
+//   background-color: $inverse-hover-color;
+// }
 
 .header-button {
   width: 160px;
@@ -112,6 +112,10 @@
   background: none;
   border: none;
   cursor: pointer;
+  &:focus,
+  :hover {
+    transform: scale(1.5);
+  }
   @media screen and (min-width: 1280px) {
     display: none;
   }

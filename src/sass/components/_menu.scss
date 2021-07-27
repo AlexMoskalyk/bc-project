@@ -9,7 +9,7 @@
 }
 .header-menu {
   width: 250px;
-  height: 502px;
+  height: 100%;
   background-color: #e17992;
   padding-left: 20px;
   padding-right: 20px;
@@ -75,6 +75,10 @@
   margin: auto 0;
   .menu-link {
     color: $secondary-text-color;
+  }
+  .menu-link:hover,
+  :focus {
+    color: $primary-accent-color;
   }
   &:first-child {
     border-top: 1px solid #e18298;
