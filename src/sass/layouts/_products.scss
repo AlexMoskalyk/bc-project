@@ -1,15 +1,19 @@
-.products {
-    display: block;
+.products-section {
     padding-top: 120px;
-    padding-bottom: 100px;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 115px;
-    }
 }
+// .products {
+//     display: block;
+//     padding-top: 120px;
+//     padding-bottom: 100px;
+
+//     @media screen and (min-width: 768px) {
+//         padding-bottom: 115px;
+//     }
+// }
 
 .prod-claim {
-    margin-top: 120px;
+    // margin-top: 120px;
     margin-bottom: 15px;
 
     font-family: Titan One;
@@ -79,7 +83,7 @@
     }
     &:focus,
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.1);
         transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,6 +165,8 @@
 }
 .prod-name-icecream {
     &::before {
+        background: url(../images/products/prod1-mob-x1-min.png);
+
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -199,6 +205,8 @@
 
 .prod-name-icecoffee {
     &::before {
+        background: url(../images/products/prod2-mob-x1-min.png);
+
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -237,6 +245,7 @@
 
 .prod-name-milkshakes {
     &::before {
+        background: url(../images/products/prod3-mob-x1-min.png);
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -294,7 +303,7 @@
 
     // &:focus,
     // &:hover {
-    //     transform: scale(1.05);
+    //     transform: scale(1.2);
     //     transition-property: transform;
     //     transition-duration: 250ms;
     //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -302,15 +311,24 @@
 }
 
 .prod-item-descr {
+    max-width: 200px;
+    width: 100%;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     letter-spacing: 0.04em;
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
         font-size: 16px;
-}
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 60px;
+        font-size: 16px;
+    }
 }
 
 .prod-item-btn {
@@ -321,6 +339,10 @@
     border-style: none;
     cursor: pointer;
     background-color: $primary-bg-color;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 50px;
+    }
 
     &:hover,
     &:focus {
