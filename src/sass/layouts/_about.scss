@@ -1,11 +1,11 @@
 .about {
   padding-top: 125px;
-  padding-bottom: 39px;
+  // padding-bottom: 39px;
   background-color: $secondary-bg-color;
   background-image: url(../images/about/cowbg-mob-x1.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 90%;
+  background-position-y: 94%;
   background-size: contain;
 
   @media screen and (min-width: 480px) {
@@ -24,7 +24,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 130px;
     background-image: unset;
-    padding-bottom: 66px;
+    // padding-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 100%;
-    padding-bottom: 39px;
+    // padding-bottom: 39px;
     background-size: 1280px;
   }
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
