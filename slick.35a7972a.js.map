@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/slick.js"],"names":["$","slick","arrows","dots","autoplay","autoplaySpeed"],"mappings":";AAAAA,EAAE,kBAAkBC,MAAM,CACtBC,QAAQ,EACRC,MAAM,EACNC,UAAU,EACVC,cAAe","file":"slick.35a7972a.js","sourceRoot":"../src","sourcesContent":["$('.slick-wrapper').slick({\n    arrows: false,\n    dots: true,\n    autoplay: true,\n    autoplaySpeed: 3000\n});"]}

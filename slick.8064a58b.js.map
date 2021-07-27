@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/slick.js"],"names":["$","slick","arrows","dots"],"mappings":";AAAAA,EAAE,kBAAkBC,MAAM,CACtBC,QAAQ,EACRC,MAAM","file":"slick.8064a58b.js","sourceRoot":"../src","sourcesContent":["$('.slick-wrapper').slick({\n    arrows: false,\n    dots: true\n});"]}
