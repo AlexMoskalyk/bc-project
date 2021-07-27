@@ -87,6 +87,12 @@
     height: 34px;
 
     &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
       margin-right: 25px;
     }
   }
