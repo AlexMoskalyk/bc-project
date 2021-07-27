@@ -20,22 +20,38 @@
 
 .customer-reviews-text-wrapper {
   background-color: $reviews-bg-color;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 43px;
-  padding-bottom: 20px;
+  padding-right: 66px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+
   display: block;
   margin: 0 auto;
+
+  max-width: 281px;
 
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     background-color: $primary-bg-color;
+
+    padding-top: 43px;
+    padding-right: 66px;
+    padding-bottom: 26px;
+    padding-left: 50px;
+
+    max-width: 620px;
+
     margin-bottom: 24px;
   }
 
   @media screen and (min-width: 1280px) {
     background-color: $reviews-bg-color;
+
+    padding-top: 43px;
+    padding-right: 66px;
+    padding-bottom: 26px;
+    padding-left: 50px;
 
     max-width: 928px;
 
@@ -52,11 +68,9 @@
 }
 
 .customer-reviews-text {
-  //   background-image: repeating-linear-gradient(
-  //     to bottom,
+  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
 
-  //   );
-
+  max-width: 158px;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
@@ -65,22 +79,17 @@
 
   position: relative;
   z-index: 1;
-  display: block;
-  margin: 0 auto;
-
-  max-width: 162px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 2.16;
-    max-width: 450px;
+    max-width: 460px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
-
-    max-width: 586px;
+    max-width: 750px;
   }
 }
 
@@ -92,15 +101,17 @@
   height: 40px;
   display: block;
   position: absolute;
-  top: -14px;
-  left: -12px;
+  top: -17px;
+  left: -8px;
 
   @media screen and (min-width: 768px) {
-    left: -31px;
+    top: -17px;
+    left: -39px;
   }
 
   @media screen and (min-width: 1280px) {
-    left: -13px;
+    top: -17px;
+    left: -34px;
   }
 }
 
@@ -174,5 +185,9 @@
     background-image: url(../images/customer-reviews/home-x.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 13px;
+    height: 12px;
+    left: 3px;
+    top: 3px;
   }
 }
