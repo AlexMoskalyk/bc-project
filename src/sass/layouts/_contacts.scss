@@ -1,5 +1,5 @@
 .section-locations {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-top: 86px;
     padding-bottom: 113px;
     background-image: linear-gradient(to bottom, $primary-bg-color 5%, $secondary-bg-color 5%);
@@ -14,7 +14,7 @@
     padding-bottom: 165px;
     background-size: contain;
     background-repeat: no-repeat;
-
+    background-position-y: 10%;
     background-image: url(../images/contacts/bg-img-contacts.png),
       linear-gradient(to bottom, $primary-bg-color 10%, $secondary-bg-color 10%);
   }
@@ -30,12 +30,11 @@
   background: $primary-bg-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  @media screen and (max-width: 767px) {
-    padding: 43px 20px;
-    & + & {
-      margin-top: 20px;
-    }
+  padding: 43px 20px;
+  & + & {
+    margin-top: 20px;
   }
+
   @media screen and (min-width: 768px) {
     padding: 50px 32px;
     & + & {
@@ -57,11 +56,11 @@
   color: $secondary-text-color;
   background-color: #f0d1a5;
   border-radius: 4px;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.83;
-    max-width: 80px;
-    margin-bottom: 25px;
+  font-size: 12px;
+  line-height: 1.83;
+  max-width: 80px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -75,12 +74,12 @@
 }
 
 .locations-shop.truck {
-  @media screen and (max-width: 767px) {
-    background-color: #c2e297;
-    max-width: 130px;
-  }
+  background-color: #c2e297;
+  max-width: 130px;
+  // @media screen and (min-width: 480px) {
+
+  // }
   @media screen and (min-width: 768px) {
-    background-color: #c2e297;
     max-width: 138px;
   }
 }
@@ -88,11 +87,10 @@
 .locations-city {
   font-weight: 500;
   color: $special-text-color;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.83;
-    margin-bottom: 10px;
-  }
+  font-size: 12px;
+  line-height: 1.83;
+  margin-bottom: 10px;
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
@@ -108,10 +106,11 @@
 .locations-description {
   font-weight: 500;
   color: #907e82;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.5;
-  }
+  font-size: 12px;
+  line-height: 1.5;
+  // @media screen and (min-width: 480px) {
+
+  // }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.64;
@@ -159,13 +158,14 @@
 .locations-day {
   font-weight: 500;
   color: $special-text-color;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.83;
-    & + .locations-time {
-      margin-bottom: 10px;
-    }
+  font-size: 12px;
+  line-height: 1.83;
+  & + .locations-time {
+    margin-bottom: 10px;
   }
+  // @media screen and (min-width: 480px) {
+
+  // }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
@@ -185,10 +185,11 @@
 .locations-time {
   font-weight: 500;
   color: #ffa5ba;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.83;
-  }
+  font-size: 12px;
+  line-height: 1.83;
+
+  // @media screen and (min-width: 480px) {
+  // }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
@@ -202,10 +203,11 @@
 .locations-link {
   font-weight: 500;
   color: $primary-text-color;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.5;
-  }
+  font-size: 12px;
+  line-height: 1.5;
+  // @media screen and (min-width: 480px) {
+
+  // }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
@@ -217,20 +219,22 @@
 }
 
 .locations-button {
-  @media screen and (max-width: 767px) {
-    margin-top: 54px;
-    text-align: center;
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 54px;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
   }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // @media screen and (min-width: 480px) {
+
+  // }
 
   @media screen and (min-width: 768px) {
     margin-top: 81px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     &:not(:last-child) {
       margin-right: 14.5px;
@@ -246,9 +250,10 @@
 }
 
 .locations-button-item + .locations-button-item {
-  @media screen and (max-width: 767px) {
-    margin-top: 10px;
-  }
+  margin-top: 10px;
+  // @media screen and (min-width: 480px) {
+
+  // }
 
   @media screen and (min-width: 768px) {
     margin-left: 14.5px;
