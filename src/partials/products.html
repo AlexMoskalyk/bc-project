@@ -16,7 +16,7 @@
                 <div class="prod-info-block">
                     <h3 class="prod-name prod-name-icecream">ice cream</h3>
                     <p class="prod-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <button class="prod-item-btn" type="button">
+                    <button class="prod-item-btn data-modal-prod1" type="button" data-modal-prod1-open>
                         <svg class="prod-item-btn-icon" width="20" height="20">
                             <use href="./images/sprite-ice.svg#arrow-right2"></use>
                         </svg>
@@ -59,4 +59,27 @@
             </li>
         </ul>
     </div>
+
+<!-- modal window for icecream (prod1) product card -->
+    <div class="prod-backdrop is-hidden" data-modal-prod1>
+        <div class="modal-prod1-window">
+            <button class="modal-prod1-close-btn" type="button" data-modal-prod1-close>
+                <svg class="modal-icon-close" width="18" height="18">
+                    <use href="./images/sprite-ice.svg#close"></use>
+                </svg>
+            </button>
+            <p class="prod-item-descr">fiucghsierng</p>
+        </div>
+        
+
+
+        
+    </div>
+<!-- modal window for icecoffee (prod2) product card -->
+<!-- modal window for milkshakes (prod3) product card -->
+
+
+
+
+<script src="./js/prod.js"></script>
 </section>

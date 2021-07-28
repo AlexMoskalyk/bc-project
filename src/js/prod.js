@@ -1,44 +1,14 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('.prod1-open-btn'),
-    closeMenuBtn: document.querySelector('.prod1-close-btn'),
-    menu: document.querySelector('.prod1-descr'),
+    openModalBtn: document.querySelector('[data-modal-prod1-open]'),
+    closeModalBtn: document.querySelector('[data-modal-prod1-close]'),
+    modal: document.querySelector('[data-modal-prod1]'),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleMenu() {
-    refs.menu.classList.toggle('visually-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openMenuBtn: document.querySelector('.prod2-open-btn'),
-    closeMenuBtn: document.querySelector('.prod2-close-btn'),
-    menu: document.querySelector('.prod2-descr'),
-  };
-
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
-
-  function toggleMenu() {
-    refs.menu.classList.toggle('visually-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openMenuBtn: document.querySelector('.prod3-open-btn'),
-    closeMenuBtn: document.querySelector('.prod3-close-btn'),
-    menu: document.querySelector('.prod3-descr'),
-  };
-
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
-
-  function toggleMenu() {
-    refs.menu.classList.toggle('visually-hidden');
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
   }
 })();
