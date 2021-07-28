@@ -1,4 +1,13 @@
-.gallery-img {
+.gallery {
+  background: #fff5f6;
+
+  background: linear-gradient(
+    90deg,
+    rgba(162, 4, 61, 0) 50%,
+    rgba(255, 245, 246, 1) 50%,
+    rgba(255, 245, 246, 1) 100%
+  );
+
   @media screen and (min-width: 480px) {
     padding-bottom: 80px;
   }
