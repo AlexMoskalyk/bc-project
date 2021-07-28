@@ -94,12 +94,16 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         & button {
-            background-color: $hover-color;
+            border: 2px solid $hover-color;
+            background-color: $primary-accent-color;
             box-shadow: 0px 0px 0px 1px $primary-accent-color;
             transform: scale(1.2);
             transition-property: transform;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        & svg {
+            fill: $hover-color;
         }
     }
 }
@@ -332,7 +336,7 @@
     border-radius: 50%;
     border-style: none;
     cursor: pointer;
-    background-color: $primary-bg-color;
+    background-color: $secondary-text-color;
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 50px;
@@ -345,3 +349,123 @@
     fill: $primary-accent-color;
     cursor: pointer;
 }
+
+// modal window for product cards
+.prod-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+}
+.modal-prod1-window,
+.modal-prod2-window,
+.modal-prod3-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    
+    max-width: 280px;
+    width: 100%;
+    height: 400px;
+
+    padding: 50px 20px;
+
+    background: $hero-bg-color;
+    border-radius: 24px;
+    opacity: 0.85;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: 480px) {
+        max-width: 440px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 440px;
+        height: 500px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 670px;
+    }
+}
+
+.modal-prod2-window__bgbrown {
+    background: #F0D1A5;
+}
+.modal-prod3-window__bggreen {
+    background: #C2E297;
+}
+
+.modal-prod-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    box-sizing: border-box;
+    
+    background: $primary-bg-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    cursor: pointer;
+    &:hover svg {
+        border: none;
+        fill: $primary-accent-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.modal-icon-close {
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    fill: $special-text-color;
+    &:hover,
+    :focus {
+        background: $primary-bg-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        cursor: pointer;
+    }
+}
+
+.modal-prod-descr {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $secondary-text-color;
+
+        @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+}
+
+
+
