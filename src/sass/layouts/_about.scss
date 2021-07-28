@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   padding-top: 125px;
   // padding-bottom: 39px;
   background-color: $secondary-bg-color;
@@ -88,7 +89,6 @@
     }
   }
   &-item {
-    position: relative;
     margin-right: 35px;
     margin-left: 35px;
     @media screen and (min-width: 480px) {
@@ -182,7 +182,6 @@
 }
 
 .about-modal {
-  // transform: translate(-50%, -50%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 1000ms;
 }
@@ -193,19 +192,48 @@
 }
 
 .about-modal-window {
-  width: 470px;
-  height: 500px;
-  background-color: $secondary-accent-color;
+  background: rgba(255, 245, 246, 0.8);
+
+  // background-image: url(../images/about/cow-desc-x1.png);
+  width: 500px;
+  height: auto;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 40px;
   position: absolute;
-  left: 53%;
-  top: 35%;
-  padding: 25px;
-  // transform: translate(-50%, -50%);
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // transition-duration: 5000ms;
+  left: calc(50% - 500px);
+  top: calc(50% - 111px);
+  padding: 60px;
+}
+
+.about-close-btn {
+  // width: 26px;
+  // height: 26px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  background: none;
+
+  border-radius: 50%;
+
+  &-icon {
+    fill: $secondary-accent-color;
+    margin: 5px auto;
+    width: 15px;
+    height: 15px;
+    display: block;
+  }
+}
+
+.about-close-btn-icon:hover,
+.about-close-btn-icon:focus {
+  fill: $primary-accent-color;
+}
+.about-close-btn:hover,
+.about-close-btn:focus {
+  border-color: $primary-accent-color;
 }
 
 // @media screen and (min-width: 480px) {
