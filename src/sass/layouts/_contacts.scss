@@ -329,7 +329,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid rgba(161, 161, 161, 0.5);
+  border: 1px solid $primary-accent-color;
   background-color: transparent;
   right: 10px;
   top: 10px;
@@ -337,6 +337,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: unset;
+  &:hover {
+    background-color: $secondary-accent-color;
+  }
 }
 
 .modal-form-field {
@@ -388,9 +392,11 @@
 }
 
 .modal-icon-close {
-  fill: #000000;
+  fill: $primary-accent-color;
+  width: 15px;
+  height: 15px;
   .modal-close-btn:hover & {
-    fill: $primary-accent-color;
+    fill: $primary-bg-color;
   }
 }
 
@@ -442,7 +448,7 @@
   }
   @media screen and (min-width: 1280px) {
     width: 100vw;
-    height: 85vh;
+    height: 550px;
   }
 
   background-color: $secondary-bg-color;
