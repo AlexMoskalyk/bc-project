@@ -11,6 +11,7 @@
 .button:hover,
 .button:focus {
   background-color: $hover-color;
+  cursor: pointer;
 }
 
 .button-inverse {
