@@ -192,56 +192,67 @@
 }
 
 .about-modal-window {
-  background: rgba(255, 245, 246, 0.8);
-
-  // background-image: url(../images/about/cow-desc-x1.png);
-  width: 500px;
+  width: 270px;
   height: auto;
+  left: calc(50% - 135px);
+  top: calc(50% + 30px);
+  padding: 25px;
+  background: rgba(255, 245, 246, 1);
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 40px;
+  border: 1px solid $secondary-accent-color;
+  box-shadow: 0px 1px 3px rgba(212, 20, 67, 0.12), 0px 1px 1px rgba(212, 20, 67, 0.14),
+    0px 2px 1px rgba(212, 20, 67, 0.2);
+  border-radius: 10px;
   position: absolute;
-  left: calc(50% - 500px);
-  top: calc(50% - 111px);
-  padding: 60px;
-}
 
-.about-close-btn {
-  // width: 26px;
-  // height: 26px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  border: 2px solid rgba(33, 33, 33, 0.2);
-  background: none;
+  & .about-close-btn {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
 
-  border-radius: 50%;
+    @media screen and (min-width: 768px) {
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    width: 260px;
 
-  &-icon {
-    fill: $secondary-accent-color;
-    margin: 5px auto;
-    width: 15px;
-    height: 15px;
-    display: block;
+    left: calc(50% - 40px);
+    top: calc(50% + 60px);
+    padding: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    background: rgba(255, 245, 246, 0.88);
+    width: 350px;
+    left: calc(50% - 350px);
+    top: calc(50% - 80px);
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+
+    left: calc(50% - 500px);
+    top: calc(50% - 111px);
+    padding: 40px;
   }
 }
+.about-modal-text {
+  color: $special-text-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  color: $primary-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 
-.about-close-btn-icon:hover,
-.about-close-btn-icon:focus {
-  fill: $primary-accent-color;
+  @media screen and (min-width: 1280px) {
+    line-height: 1.94;
+  }
 }
-.about-close-btn:hover,
-.about-close-btn:focus {
-  border-color: $primary-accent-color;
-}
-
-// @media screen and (min-width: 480px) {
-//   width: 450px;
-//   height: 609px;
-//   padding: 40px;
-// }
-// @media screen and (min-width: 1200px) {
-//   width: 528px;
-//   height: 581px;
-// }
