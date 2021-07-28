@@ -3,6 +3,8 @@
   & > .container {
     margin: 0 auto;
     margin-top: 6px;
+  }
+  .main-nav {
     display: flex;
     justify-content: space-between;
     @media screen and (min-width: 768px) {
@@ -176,7 +178,7 @@
     }
   }
   &-button:hover,
-  :focus {
+  &-button:focus {
     background-color: #c7133e;
   }
   &-button-revers {
@@ -242,13 +244,11 @@
       max-height: 12px;
       fill: $primary-accent-color;
     }
-    &:hover &-icon {
-      fill: $hover-color;
-    }
+
     &:hover,
-    :focus {
-      border: 2px solid $hover-color;
-      background-color: $primary-accent-color;
+    &:focus {
+      border: 1px solid $primary-accent-color;
+      background-color: $hover-color;
     }
   }
   &-paragraf-section {
