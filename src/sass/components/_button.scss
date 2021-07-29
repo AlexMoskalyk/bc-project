@@ -12,6 +12,8 @@
 .button:focus {
   background-color: $hover-color;
   cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .button-inverse {
@@ -27,4 +29,6 @@
 .button-inverse:hover,
 .button-inverse:focus {
   background-color: $inverse-hover-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
