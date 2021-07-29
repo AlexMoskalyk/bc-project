@@ -1,19 +1,29 @@
 .section-locations {
   padding-bottom: 113px;
-  background-image: linear-gradient(to bottom, $primary-bg-color 5%, $secondary-bg-color 5%);
-
+  // background-image: linear-gradient(to bottom, $primary-bg-color 5%, $secondary-bg-color 5%);
+  background: linear-gradient(to bottom, $primary-bg-color 5%, $secondary-bg-color 5%);
+  background-size: contain;
+  background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     padding-bottom: 158px;
-    background-image: linear-gradient(to bottom, $primary-bg-color 12%, $secondary-bg-color 12%);
+    // background-image: linear-gradient(to bottom, $primary-bg-color 12%, $secondary-bg-color 12%);
+    background: linear-gradient(to bottom, $primary-bg-color 12%, $secondary-bg-color 12%);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 165px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 10%;
-    background-image: url(../images/contacts/bg-img-contacts.png),
-      linear-gradient(to bottom, $primary-bg-color 10%, $secondary-bg-color 10%);
+
+    background: linear-gradient(to bottom, $primary-bg-color 12%, $secondary-bg-color 12%);
   }
+}
+
+.locations-wrapper {
+  background-image: url(../images/contacts/bg-img-contacts.png);
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  background-position-x: 50%;
+  min-width: 1280px;
 }
 
 .locations-list {
@@ -329,7 +339,8 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid $primary-accent-color;
+  border: none;
+  // border: 1px solid $primary-accent-color;
   background-color: transparent;
   right: 10px;
   top: 10px;
