@@ -1,17 +1,21 @@
 (() => {
   const refs = {
     
-    openMBtnm: document.querySelector('.to-buy-open-btn'),
-    closeMBtnm: document.querySelector('.to-buy-close-btn'),
-    m: document.querySelector('.mob-m'),
+    openb: document.querySelector('.to-buy-open-btn'),
+    openc: document.querySelector('.to-buy-open-btn2'),
+
+    closeb: document.querySelector('.to-buy-close-btn'),
+    modalb: document.querySelector('.mob-m-tob'),
    
   };
 
-  refs.openMBtnm.addEventListener('click', toggleM);
-  refs.closeMBtnm.addEventListener('click', toggleM);
+  refs.openb.addEventListener('click', toggleMenu);
+  refs.openc.addEventListener('click', toggleMenu);
+
+  refs.closeb.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle('visually-hidden');
+    refs.modalb.classList.toggle('visually-hidden');
     
   }
  

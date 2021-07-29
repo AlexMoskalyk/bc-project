@@ -11,6 +11,7 @@
     closeMenub: document.querySelector('.mob-menu__close3'),
     closeMenuc: document.querySelector('.mob-menu__close4'),
     closeMenud: document.querySelector('.mob-menu__close5'),
+    closeMenue: document.querySelector('.mob-menu__close6'),
      
   };
 
@@ -21,6 +22,8 @@
   refs.closeMenub.addEventListener('click', toggleMenu);
   refs.closeMenuc.addEventListener('click', toggleMenu);
   refs.closeMenud.addEventListener('click', toggleMenu);
+  refs.closeMenue.addEventListener('click', toggleMenu);
+
   refs.hamburger.addEventListener("click", toggleMenu );
 
   function toggleMenu() {
