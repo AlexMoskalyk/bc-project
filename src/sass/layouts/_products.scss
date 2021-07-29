@@ -91,6 +91,7 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
     & button {
       border: 2px solid $hover-color;
       background-color: $primary-accent-color;
@@ -102,6 +103,8 @@
     }
     & svg {
       fill: $hover-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
@@ -356,7 +359,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -364,6 +367,7 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal-prod1-window,
 .modal-prod2-window,
 .modal-prod3-window {
@@ -375,7 +379,6 @@
 
   max-width: 280px;
   width: 100%;
-  // height: 300px;
 
   padding: 50px 30px;
 
@@ -391,7 +394,6 @@
   }
   @media screen and (min-width: 768px) {
     max-width: 440px;
-    // height: 500px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -407,28 +409,51 @@
 }
 
 .modal-close-btn.modal-prod-close-btn1 {
-    border-style: none;
-    &:hover {
-        background: $hero-bg-color;
-    }
+  margin-top: 8px;
+  margin-right: 8px;
+  border-style: none;
+  &:hover {
+    background: $hero-bg-color;
+  }
 }
 
 .modal-close-btn.modal-prod-close-btn2 {
-    border-style: none;
-    &:hover {
-        background: #f0d1a5;
-    }
+  margin-top: 8px;
+  margin-right: 8px;
+  border-style: none;
+  &:hover {
+    background: #f0d1a5;
+  }
 }
 
 .modal-close-btn.modal-prod-close-btn3 {
-    border-style: none;
-    &:hover {
-        background: #c2e297;
-    }
+  margin-top: 8px;
+  margin-right: 8px;
+  border-style: none;
+  &:hover {
+    background: #c2e297;
+  }
 }
 
 .modal-icon-close.modal-prod-icon-close {
-    fill: $special-text-color;
+  fill: $special-text-color;
+}
+
+.modal-prod-descr {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 
@@ -474,23 +499,3 @@
 //     cursor: pointer;
 //   }
 // }
-
-
-
-
-.modal-prod-descr {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.5;
-
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  color: $secondary-text-color;
-
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
-  }
-}
