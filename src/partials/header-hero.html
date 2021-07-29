@@ -20,21 +20,21 @@
     
     <!-- navigation -->
     <ul class="header-nav">
-        <li class="header-nav-item"> <a class="header-nav-link scrollto" href="#home">Home</a> </li>
-        <li class="header-nav-item"> <a class="header-nav-link scrollto" href="#about">About us</a> </li>
-        <li class="header-nav-item"> <a class="header-nav-link scrollto" href="#about">How it’s made?</a> </li>
-        <li class="header-nav-item"> <a class="header-nav-link scrollto" href="#products">Our products</a> </li>
-        <li class="header-nav-item"> <a class="header-nav-link scrollto" href="#Contact">Contact</a> </li>
+        <li class="header-nav-item"> <a class="header-nav-link scrollto hero-header-hover" href="#home">Home</a> </li>
+        <li class="header-nav-item"> <a class="header-nav-link scrollto hero-header-hover" href="#about">About us</a> </li>
+        <li class="header-nav-item"> <a class="header-nav-link scrollto hero-header-hover" href="#about">How it’s made?</a> </li>
+        <li class="header-nav-item"> <a class="header-nav-link scrollto hero-header-hover" href="#products">Our products</a> </li>
+        <li class="header-nav-item"> <a class="header-nav-link scrollto hero-header-hover" href="#Contact">Contact</a> </li>
     </ul>
     <div class="header-buttons">
-        <button class="hamburger hamburger--arrowturn header-burger mob-menu-open-btn" type="button">
+        <button class="hamburger hamburger--arrowturn header-burger mob-menu-open-btn " type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
         
        
-        <button class="header-button to-buy-open-btn" type="button">Buy now
+        <button class="header-button to-buy-open-btn hero-header-hover" type="button">Buy now
             <svg class="header-button-icon">
                 <use href="./images/sprite-ice.svg#Vector-1"></use>
             </svg>
@@ -45,7 +45,7 @@
    
     
     
-    </div>
+    
 </nav>
 
 
@@ -61,8 +61,8 @@
         <div class="hero-title-section hero-possition">
             <h1 class="hero-title wow bounceIn">ice cream <br /> made with <br> <span>passion</span> </h1>
             <div class="hero-button-list">
-                <a class="hero-button" href="#products "> Products</a>
-                <a class="hero-button-revers" href="#about "> How it’s made?</a>
+                <a class="hero-button hero-header-hover" href="#products "> Products</a>
+                <a class="hero-button-revers hero-header-hover" href="#about "> How it’s made?</a>
                 
         </div>
      </div>
@@ -86,7 +86,7 @@
                     <p class="hero-paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut
                         labore et</p>
-                    <button class="hero-arrow-right" type="button"><svg class="hero-arrow-right-icon">
+                    <button class="hero-arrow-right hero-header-hover" type="button"><svg class="hero-arrow-right-icon hero-header-hover">
                             <use href="./images/sprite-ice.svg#arrow-right2"></use>
                         </svg>
                     </button>
@@ -158,7 +158,7 @@
 
         <p class="to-buy-title">Fill out the order form and we will contacted you</p>
         <fieldset class=" you-buy-position">
-            <label class="to-buy-lable" for="products">You choose</label>
+            <label class="to-buy-lable" for="prod">You choose</label>
             <select class="to-buy-lable to-buy-select" id="prod" name="prod">
                 <option value="5$">chocolate</option>
                 <option value="2$">vanilla</option>
@@ -169,7 +169,7 @@
             <label class="to-buy-lable">
                 Naw match
             </label>
-            <input class="to-buy-lable" type="number" name="Naw match" />
+            <input class="to-buy-input" type="number" name="Naw match" />
         </fieldset>
         <fieldset class="you-buy-position">
             <legend>Enter your contact details</legend>
@@ -177,47 +177,47 @@
                 Name
 
             </label>
-            <input class="to-buy-lable" type="text" name="username" placeholder="Jim Smith" />
+            <input class="to-buy-input" type="text" name="username" placeholder="Jim Smith" />
             <label class="to-buy-lable">
                 Contact tell
 
             </label>
-            <input class="to-buy-lable" type="tel" name="tell" placeholder="+312345678" />
+            <input class="to-buy-input" type="tel" name="tell" placeholder="+312345678" />
         </fieldset>
         <fieldset class="you-buy-position">
             <label class="to-buy-lable" for="tbname">
                 Name on Card
 
             </label>
-            <input class="to-buy-lable" type="text" id="tbname" name="cardname" placeholder="John More Doe">
+            <input class="to-buy-input" type="text" id="tbname" name="cardname" placeholder="John More Doe">
             <label class="to-buy-lable" for="ccnum">Credit card number</label>
-            <input class="to-buy-lable" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input class="to-buy-input" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
             <label class="to-buy-lable" for="expmonth">Exp Month </label>
-            <input class="to-buy-lable" type="text" id="expmonth" name="expmonth" placeholder="September">
+            <input class="to-buy-input" type="text" id="expmonth" name="expmonth" placeholder="September">
 
 
             <label class="to-buy-lable" for="expyear">Exp Year</label>
-            <input class="to-buy-lable" type="text" id="expyear" name="expyear" placeholder="2021">
+            <input class="to-buy-input" type="text" id="expyear" name="expyear" placeholder="2021">
 
-            <label class="to-buy-lable" for="cvv">CVV <input class="to-buy-lable" type="text" id="cvv" name="cvv"
+            <label class="to-buy-input" for="cvv">CVV <input class="to-buy-input" type="text" id="cvv" name="cvv"
                     placeholder="352"></label>
 
 
 
         </fieldset>
         <label class="to-buy-lable">
-            <input class="to-buy-lable" type="checkbox" checked="checked" name="sameadr"> Shipping address same as
+            <input class="to-buy-input" type="checkbox" checked="checked" name="sameadr"> Shipping address same as
             billing
         </label>
 
 
-        <label class="to-buy-lable" for="feedback">For comments</label>
-        <textarea class="modal-form-input to-bue-form-comment" name="feedback" id="feedback"
+        <label class="to-buy-lable" for="feed">For comments</label>
+        <textarea class="modal-form-input to-bue-form-comment" name="feedback" id="feed"
             placeholder="For comments"></textarea>
 
         <button class="modal-btn-submit" type="submit">Submit</button>
 
-        <button class="modal-close-btn to-buy-close-btn" type="button">
+        <button class="modal-close-btn to-buy-close-btn hero-header-hover" type="button">
             <svg width="18" height="18">
                 <use class="modal-icon-close " href="./images/sprite-ice.svg#close"></use>
             </svg>
