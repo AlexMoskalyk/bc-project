@@ -64,10 +64,6 @@
   color: $secondary-text-color;
   background-color: $primary-accent-color;
 }
-// .button-inverse:hover,
-// :focus {
-//   background-color: $inverse-hover-color;
-// }
 
 .header-button {
   width: 160px;
@@ -109,14 +105,14 @@
     margin-left: 8px;
   }
 }
-.menu-btn-open {
-}
+
 .header-burger {
   background: none;
   border: none;
   cursor: pointer;
+  display: block;
   &:focus,
-  :hover {
+  & :hover {
     transform: scale(1.5);
   }
   @media screen and (min-width: 1280px) {
@@ -146,15 +142,8 @@
     width: 24px;
     height: 1px;
     display: block;
-    background-color: $primary-accent-color;
-  }
-
-  & span:before {
-    top: 6px;
-  }
-
-  & span::after {
     bottom: 6px;
+    background-color: $primary-accent-color;
   }
 }
 
@@ -243,13 +232,19 @@
     &-icon {
       max-width: 6px;
       max-height: 12px;
+      display: block;
+      margin: auto;
       fill: $primary-accent-color;
     }
-
+    &:hover &-icon,
+    &:focus &-icon {
+      fill: $hover-color;
+    }
     &:hover,
     &:focus {
-      border: 1px solid $primary-accent-color;
-      background-color: $hover-color;
+      border: 2px solid $hover-color;
+      box-shadow: 0px 0px 0px 1px $primary-accent-color;
+      background-color: $primary-accent-color;
     }
   }
   &-paragraf-section {
@@ -447,5 +442,73 @@
     display: block;
     left: 2%;
     bottom: 5%;
+  }
+}
+
+.header-wrap {
+  .modal-to-buy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 450px;
+    height: auto;
+    background-color: #fff5f6;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    @media screen and (min-width: 1280px) {
+      width: 400px;
+      height: 550px;
+    }
+  }
+  .to-buy-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: $primary-accent-color;
+    margin-bottom: 15px;
+    padding-top: 15px;
+  }
+  .you-buy-position {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    .to-buy-lable {
+      width: 100%;
+      margin-bottom: 8px;
+      font-size: 12px;
+      line-height: 1.16;
+      color: #907e82;
+    }
+  }
+
+  .to-bue-form-comment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-bottom: 20px;
+  }
+
+  .to-bue-form-comment::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  .to-bue-icon-close {
+    fill: $primary-accent-color;
+    width: 15px;
+    height: 15px;
+    .modal-close-btn:hover & {
+      fill: $primary-bg-color;
+    }
   }
 }
