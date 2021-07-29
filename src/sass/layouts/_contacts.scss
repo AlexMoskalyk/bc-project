@@ -19,11 +19,13 @@
 }
 
 .locations-wrapper {
-  background-image: url(../images/contacts/bg-img-contacts.png);
-  background-repeat: no-repeat;
-  background-position-y: 25%;
-  background-position-x: 50%;
-  min-width: 1280px;
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/contacts/bg-img-contacts.png);
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    background-position-x: 50%;
+    min-width: 1280px;
+  }
 }
 
 .locations-list {
