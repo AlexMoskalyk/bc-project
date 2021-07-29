@@ -56,12 +56,31 @@
   margin-top: 17px;
   padding: 0;
 
+  animation-name: lookatme;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
   @media screen and (min-width: 768px) {
     margin-top: 16px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 15px;
+  }
+}
+
+@keyframes lookatme {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
