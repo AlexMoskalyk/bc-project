@@ -1,470 +1,495 @@
 .products-section {
-    padding-top: 120px;
-    padding-bottom: 100px;
-    
-    @media screen and (min-width: 768px) {
-        padding-bottom: 120px;
-    }
+  padding-top: 120px;
+  padding-bottom: 100px;
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
 }
 
 .prod-claim {
-    // margin-top: 120px;
-    margin-bottom: 15px;
+  // margin-top: 120px;
+  margin-bottom: 15px;
 
-    font-family: Titan One;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
 
-    color: $secondary-accent-color;
+  color: $secondary-accent-color;
 
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        font-size: 30px;
-        line-height: 34px;
-    }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .prod-headline {
-    margin-bottom: 144px;
-    text-align: center;
+  margin-bottom: 144px;
+  text-align: center;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 160px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 160px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 260px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 260px;
+  }
 }
 
 .prod-list {
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .prod-item {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    text-align: center;
-    color: $secondary-text-color;
-    border-radius: 24px;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
-    &:nth-child(1) {
-        background: $hero-bg-color;
-    }
-    &:nth-child(2) {
-        background: #F0D1A5;
-    }
-    &:nth-child(3) {
-        background: #C2E297;
-    }
+  text-align: center;
+  color: $secondary-text-color;
+  border-radius: 24px;
+
+  &:nth-child(1) {
+    background: $hero-bg-color;
+  }
+  &:nth-child(2) {
+    background: #f0d1a5;
+  }
+  &:nth-child(3) {
+    background: #c2e297;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 20px * 2) / 3);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  &:not(:last-child) {
+    margin-bottom: 130px;
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 20px * 2) / 3);
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
     }
-    &:not(:last-child) {
-        margin-bottom: 130px;
-
-        @media screen and (min-width: 768px) {
-            margin-right: 20px;
-            margin-bottom: 0;
-        }
+  }
+  &:focus,
+  &:hover {
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    & button {
+      border: 2px solid $hover-color;
+      background-color: $primary-accent-color;
+      box-shadow: 0px 0px 0px 1px $primary-accent-color;
+      transform: scale(1.2);
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &:focus,
-    &:hover {
-        transform: scale(1.1);
-        transition-property: transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        & button {
-            border: 2px solid $hover-color;
-            background-color: $primary-accent-color;
-            box-shadow: 0px 0px 0px 1px $primary-accent-color;
-            transform: scale(1.2);
-            transition-property: transform;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        & svg {
-            fill: $hover-color;
-        }
+    & svg {
+      fill: $hover-color;
     }
+  }
 }
 
 .prod-name {
+  display: block;
+
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  padding-top: 160px;
+  padding-bottom: 66px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
     display: block;
-
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    padding-top: 160px;
-    padding-bottom: 66px;
+    top: -113px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 252px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 30px;
+      top: -104px;
+      left: 50%;
+      max-width: 220px;
+      width: 100%;
+      height: 233px;
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        top: -113px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 250px;
-        height: 252px;
-
-        @media screen and (min-width: 768px) {
-            top: -104px;
-            left: 50%;
-            max-width: 220px;
-            width: 100%;
-            height: 233px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            top: -210px;
-            left: 50%;
-            max-width: 337px;
-            width: 100%;
-            height: 335px;
-        }
+    @media screen and (min-width: 1280px) {
+      top: -210px;
+      left: 50%;
+      max-width: 337px;
+      width: 100%;
+      height: 335px;
     }
+  }
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 215px;
-        transform: translateX(-50%);
-        width: 26px;
-        height: 6px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 215px;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 6px;
 
-        background-image: url(../images/products/dots.png);
+    background-image: url(../images/products/dots.png);
 
-        @media screen and (min-width: 768px) {
-            margin-top: 30px;
-        }
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
     }
+  }
 }
 .prod-name-icecream {
-    &::before {
-        background: url(../images/products/prod1-mob-x1-min.png);
+  &::before {
+    background: url(../images/products/prod1-mob-x1-min.png);
 
-        @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/prod1-mob-x2-min.png);
-                background-size: cover;
-            }
-
-            @media screen and (min-width: 768px) {
-                background: url(../images/products/prod1-tab-x1-min.png);
-
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: url(../images/products/prod1-tab-x2-min.png);
-                }
-
-                background-size: cover;
-            }
-
-            @media screen and (min-width: 1280px) {
-                background: url(../images/products/prod1-desk-x1-min.png);
-
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: url(../images/products/prod1-desk-x2-min.png);
-                }
-
-                background-size: cover;
-            }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/prod1-mob-x2-min.png);
+      background-size: cover;
     }
+
+    @media screen and (min-width: 768px) {
+      background: url(../images/products/prod1-tab-x1-min.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/prod1-tab-x2-min.png);
+      }
+
+      background-size: cover;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background: url(../images/products/prod1-desk-x1-min.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/prod1-desk-x2-min.png);
+      }
+
+      background-size: cover;
+    }
+  }
 }
 
 .prod-name-icecoffee {
-    &::before {
-        background: url(../images/products/prod2-mob-x1-min.png);
+  &::before {
+    background: url(../images/products/prod2-mob-x1-min.png);
 
-        @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/prod2-mob-x2-min.png);
+      background-size: cover;
+    }
+
+    @media screen and (min-width: 768px) {
+      background: url(../images/products/prod2-tab-x1-min.png);
+
+      @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/products/prod2-mob-x2-min.png);
-            background-size: cover;
-        }
+        background-image: url(../images/products/prod2-tab-x2-min.png);
+      }
 
-        @media screen and (min-width: 768px) {
-            background: url(../images/products/prod2-tab-x1-min.png);
-
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/prod2-tab-x2-min.png);
-            }
-
-            background-size: cover;
-        }
-
-        @media screen and (min-width: 1280px) {
-            background: url(../images/products/prod2-desk-x1-min.png);
-
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/prod2-desk-x2-min.png);
-            }
-
-            background-size: cover;
-        }
+      background-size: cover;
     }
+
+    @media screen and (min-width: 1280px) {
+      background: url(../images/products/prod2-desk-x1-min.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/prod2-desk-x2-min.png);
+      }
+
+      background-size: cover;
+    }
+  }
 }
 
 .prod-name-milkshakes {
-    &::before {
-        background: url(../images/products/prod3-mob-x1-min.png);
-        @media (min-device-pixel-ratio: 2),
+  &::before {
+    background: url(../images/products/prod3-mob-x1-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/prod3-mob-x2-min.png);
+      background-size: cover;
+    }
+
+    @media screen and (min-width: 768px) {
+      background: url(../images/products/prod3-tab-x1-min.png);
+
+      @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/products/prod3-mob-x2-min.png);
-            background-size: cover;
-        }
+        background-image: url(../images/products/prod3-tab-x2-min.png);
+      }
 
-        @media screen and (min-width: 768px) {
-            background: url(../images/products/prod3-tab-x1-min.png);
-
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/prod3-tab-x2-min.png);
-            }
-
-            background-size: cover;
-        }
-
-        @media screen and (min-width: 1280px) {
-            background: url(../images/products/prod3-desk-x1-min.png);
-
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/prod3-desk-x2-min.png);
-            }
-
-            background-size: cover;
-        }
+      background-size: cover;
     }
+
+    @media screen and (min-width: 1280px) {
+      background: url(../images/products/prod3-desk-x1-min.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/prod3-desk-x2-min.png);
+      }
+
+      background-size: cover;
+    }
+  }
 }
 
 .prod-info-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    @media screen and (min-width: 768px) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .prod-item-descr {
-    max-width: 200px;
-    width: 100%;
+  max-width: 200px;
+  width: 100%;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
-    letter-spacing: 0.04em;
-    margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
-        font-size: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 60px;
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
 }
 
 .prod-item-btn {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 40px;
-    border-radius: 50%;
-    border-style: none;
-    cursor: pointer;
-    background-color: $secondary-text-color;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  background-color: $secondary-text-color;
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 50px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
 }
 
 .prod-item-btn-icon {
-    width: 11px;
-    height: 11px;
-    fill: $primary-accent-color;
-    cursor: pointer;
+  width: 11px;
+  height: 11px;
+  fill: $primary-accent-color;
+  cursor: pointer;
 }
 
 // modal window for product cards
 .prod-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal-prod1-window,
 .modal-prod2-window,
 .modal-prod3-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    
-    max-width: 280px;
-    width: 100%;
-    // height: 300px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    padding: 50px 30px;
+  max-width: 280px;
+  width: 100%;
+  // height: 300px;
 
-    background: $hero-bg-color;
-    border-radius: 24px;
-    opacity: 0.85;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    @media screen and (min-width: 480px) {
-        max-width: 300px;
-    }
-    @media screen and (min-width: 768px) {
-        max-width: 440px;
-        // height: 500px;
-    }
+  padding: 50px 30px;
 
-    @media screen and (min-width: 1280px) {
-        max-width: 670px;
-    }
+  background: $hero-bg-color;
+  border-radius: 24px;
+  opacity: 0.85;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    max-width: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 440px;
+    // height: 500px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 670px;
+  }
 }
 
 .modal-prod2-window__bgbrown {
-    background: #F0D1A5;
+  background: #f0d1a5;
 }
 .modal-prod3-window__bggreen {
-    background: #C2E297;
+  background: #c2e297;
 }
 
-.modal-prod-close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 8px;
-    margin-right: 8px;
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-    box-sizing: border-box;
-    
-    background: $primary-bg-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    
-    cursor: pointer;
-    &:hover svg {
-        border: none;
-        fill: $primary-accent-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-close-btn.modal-prod-close-btn1 {
+    border-style: none;
+    &:hover {
+        background: $hero-bg-color;
     }
 }
 
-.modal-prod-icon-close {
-    position: absolute;
-    border: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.modal-close-btn.modal-prod-close-btn2 {
+    border-style: none;
+    &:hover {
+        background: #f0d1a5;
+    }
+}
 
+.modal-close-btn.modal-prod-close-btn3 {
+    border-style: none;
+    &:hover {
+        background: #c2e297;
+    }
+}
+
+.modal-icon-close.modal-prod-icon-close {
     fill: $special-text-color;
-    &:hover,
-    :focus {
-        background: $primary-bg-color;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        cursor: pointer;
-    }
 }
+
+
+
+// .modal-prod-close-btn {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   margin-top: 8px;
+//   margin-right: 8px;
+//   width: 30px;
+//   height: 30px;
+
+//   border-radius: 50%;
+//   box-sizing: border-box;
+
+//   background: $primary-bg-color;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+
+//   cursor: pointer;
+//   &:hover svg {
+//     border: none;
+//     fill: $primary-accent-color;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
+// .modal-prod-icon-close {
+//   position: absolute;
+//   border: none;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+//   fill: $special-text-color;
+//   &:hover,
+//   :focus {
+//     background: $primary-bg-color;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     cursor: pointer;
+//   }
+// }
+
+
+
 
 .modal-prod-descr {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.5;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
 
-    text-align: center;
-    letter-spacing: 0.04em;
+  text-align: center;
+  letter-spacing: 0.04em;
 
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 
-        @media screen and (min-width: 768px) {
-        font-size: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
-
-
-
