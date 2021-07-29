@@ -122,7 +122,15 @@
 
 .hero {
   background-color: $hero-bg-color;
+  .hero-button-list {
+    display: flex;
+  }
   &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
     font-family: DM Sans;
     font-size: 8px;
     width: 62px;
@@ -132,7 +140,8 @@
     color: $secondary-text-color;
     border-radius: 20px;
     border: none;
-    cursor: pointer;
+    text-align: center;
+
     @media screen and (min-width: 1280px) {
       font-size: 14px;
       width: 104px;
@@ -144,6 +153,11 @@
     background-color: #c7133e;
   }
   &-button-revers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
     font-size: 8px;
     width: 82px;
     height: 24px;
