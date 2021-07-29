@@ -22,33 +22,6 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
-  & span {
-    width: 24px;
-    height: 1px;
-    display: block;
-    background-color: $primary-accent-color;
-    position: relative;
-  }
-
-  & span:before {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 1px;
-    display: block;
-    background-color: $primary-accent-color;
-    top: 6px;
-    bottom: -6px;
-  }
-  & span:after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 1px;
-    display: block;
-    bottom: 6px;
-    background-color: $primary-accent-color;
-  }
 }
 .header-menu {
   width: 250px;

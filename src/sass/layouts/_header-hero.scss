@@ -15,8 +15,16 @@
     }
   }
   width: 100%;
-  position: absolute;
+  position: fixed;
+  background-color: $hero-bg-color;
+  opacity: 0.9;
+  opacity: 0.9;
 
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    background-color: $hero-bg-color;
+    background: none;
+  }
   &-button {
     border: none;
     cursor: pointer;
@@ -95,55 +103,18 @@
   }
 }
 
-.header-burger-icon {
-  width: 100%;
-  height: 100%;
-}
-.hero-button-list {
-  display: flex;
-  & > .button {
-    margin-left: 8px;
-  }
-}
-
-.header-burger {
+.hamburger {
+  $hamburger-layer-color: #fff !default;
   background: none;
   border: none;
   cursor: pointer;
   display: block;
-  &:focus,
+  co &:focus,
   & :hover {
     transform: scale(1.5);
   }
   @media screen and (min-width: 1280px) {
     display: none;
-  }
-  & span {
-    width: 24px;
-    height: 1px;
-    display: block;
-    background-color: $primary-accent-color;
-    position: relative;
-  }
-
-  & span:before {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 1px;
-    display: block;
-    background-color: $primary-accent-color;
-    top: 6px;
-    bottom: -6px;
-  }
-  & span:after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 1px;
-    display: block;
-    bottom: 6px;
-    background-color: $primary-accent-color;
   }
 }
 
@@ -152,6 +123,7 @@
 .hero {
   background-color: $hero-bg-color;
   &-button {
+    font-family: DM Sans;
     font-size: 8px;
     width: 62px;
     height: 24px;
