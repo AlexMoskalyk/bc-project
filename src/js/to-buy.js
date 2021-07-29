@@ -1,5 +1,6 @@
 (() => {
   const refs = {
+    
     openMBtn: document.querySelector('.to-buy-open-btn'),
     closeMBtn: document.querySelector('.to-buy-close-btn'),
     m: document.querySelector('.mob-m'),
@@ -15,3 +16,4 @@
   }
  
 })();
+
